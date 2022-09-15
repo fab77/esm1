@@ -1,15 +1,4 @@
-// import { helloWorld } from './Box.js';
-// import { helloOldWorld } from './oldGreetings.cjs';
-
-// const greeting = helloWorld();
-// const oldGreeting = helloOldWorld();
-
-// console.log(greeting);
-// console.log(oldGreeting);
-
-
 import { Box } from "./Box.js";
-// import { BoxObject } from "./BoxObject.js";
 import { Hammer } from "./Hammer.js";
 import { Plant } from "./Plant.js";
 
