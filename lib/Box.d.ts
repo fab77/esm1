@@ -4,4 +4,5 @@ export declare class Box {
     _objs: BoxObject[];
     constructor(name: string);
     addObject(obj: BoxObject): void;
+    getFile(uri: string): Promise<ArrayBuffer>;
 }
