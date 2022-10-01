@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>ESM module</title>
+    <base href="."/>
+    <!-- <script src="./browser.js"></script> -->
+    <script src="./my-lib.js"></script>
+</head>
+
+<body>
+    <h1>Hello world from ESM5!</h1>
+    <h2>Tip: Check your console</h2>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            
+        const d = new Date();
+        const datestring = ("0" + d.getDate()).slice(-2) + "-" + ("0"+(d.getMonth()+1)).slice(-2) + "-" +d.getFullYear() + " " + ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2)+ ":" + ("0" + d.getSeconds()).slice(-2);
+
+
+        console.log("Hello World from ESM1!");
+        console.log(datestring);
+		const h  = new MyEsm1.Hammer("green");
+		const p  = new MyEsm1.Plant("blue");
+	
+		const b = new MyEsm1.Box("studio");
+		b.addObject(h);
+		b.addObject(p);
+		console.log(b);
+        const promise1 = b.getFile("http://skies.esac.esa.int/Herschel/PACS-color/properties").then( (data) => console.log(data));
+        
+        });
+        
+    </script>
+</body>
+
+</html>
