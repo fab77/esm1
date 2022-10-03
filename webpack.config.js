@@ -5,7 +5,6 @@ import {fileURLToPath} from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-import nodeExternals from 'webpack-node-externals';
 
 const PATHS = {
   // entryPoint4Node: path.resolve(__dirname, 'src/index-node.ts'),
@@ -20,13 +19,13 @@ var browserConfig = {
   // the name to filter the second entry point for applying code
   // minification via UglifyJS
   entry: {
-    'my-lib': [PATHS.entryPoint4Browser],
-    'my-lib.min': [PATHS.entryPoint4Browser]
+    'esm1': [PATHS.entryPoint4Browser],
+    'esm1.min': [PATHS.entryPoint4Browser]
   },
   target: 'web',
-  externals: nodeExternals({
-    importType: 'umd'
- }),
+//   externals: nodeExternals({
+//     importType: 'umd'
+//  }),
   // The output defines how and where we want the bundles. The special
   // value `[name]` in `filename` tell Webpack to use the name we defined above.
   // We target a UMD and name it MyLib. When including the bundle in the browser
@@ -34,7 +33,7 @@ var browserConfig = {
   output: {
     path: PATHS.bundles,
     libraryTarget: 'umd',
-    library: 'MyEsm1',
+    library: 'esm1',
     umdNamedDefine: true
   },
   // Add resolve for `tsx` and `ts` files, otherwise Webpack would

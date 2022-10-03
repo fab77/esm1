@@ -1,19 +1,16 @@
 // import { BoxObject } from "./BoxObject.js";
 // export class Box {
-
+export {};
 //     _name: string;
 //     _objs: BoxObject[];
-
 //     constructor(name: string) {
 //         this._name = name;
 //         this._objs = [];
 //         console.log("created browser box for "+name);
 //     }
-
 //     addObject(obj: BoxObject) {
 //         this._objs.push(obj);
 //     }
-
 //     async getFile(uri: string): Promise<ArrayBuffer> {
 //         // const response = await fetch(uri);
 //         const response = await window.fetch(uri);
@@ -22,6 +19,6 @@
 //         } else {
 //             return response.arrayBuffer();
 //         }
-
 //     }
 // }
+//# sourceMappingURL=Box-browser.js.map

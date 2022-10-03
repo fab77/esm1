@@ -6,11 +6,11 @@
     <title>ESM module</title>
     <base href="."/>
     <!-- <script src="./browser.js"></script> -->
-    <script src="./my-lib.js"></script>
+    <script src="./esm1.js"></script>
 </head>
 
 <body>
-    <h1>Hello world from ESM5!</h1>
+    <h1>Hello world from ESM1!</h1>
     <h2>Tip: Check your console</h2>
     
     <script>
@@ -22,10 +22,10 @@
 
         console.log("Hello World from ESM1!");
         console.log(datestring);
-		const h  = new MyEsm1.Hammer("green");
-		const p  = new MyEsm1.Plant("blue");
+		const h  = new esm1.Hammer("green");
+		const p  = new esm1.Plant("blue");
 	
-		const b = new MyEsm1.Box("studio");
+		const b = new esm1.Box("studio");
 		b.addObject(h);
 		b.addObject(p);
 		console.log(b);
