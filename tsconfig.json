@@ -2,14 +2,9 @@
   "compilerOptions": {
     // "moduleResolution": "node",  // 'node' for Node.js’ CommonJS implementation
     "moduleResolution": "node16", // 'node16' or 'nodenext' for Node.js’ ECMAScript Module Support
-    // "module": "commonjs",
     "module": "es6",
-    // "target": "es5",
     "target": "es6",  // Modern browsers support all ES6 features, so ES6 is a good choice. 
-    "lib": [
-      "es6",
-      "dom"
-    ],
+    "lib": ["es6", "dom"],
     "outDir": "lib-esm",
     "allowSyntheticDefaultImports": true,
     "suppressImplicitAnyIndexErrors": true,

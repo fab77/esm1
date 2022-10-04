@@ -7,7 +7,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import fetch from "node-fetch";
+// import fetch from "node-fetch";
+import fetch from 'cross-fetch';
 export class Box {
     constructor(name) {
         this._name = name;

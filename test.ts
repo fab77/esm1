@@ -6,3 +6,6 @@ console.log(h);
 const b = new Box("dsa");
 b.addObject(h);
 console.log(b);
+console.log("[esm1] Getting file ")
+const f = await b.getFile("http://skies.esac.esa.int/Herschel/PACS-color/properties")
+console.log(f);
